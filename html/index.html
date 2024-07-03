@@ -15,17 +15,17 @@
 <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
 
 <body>
-    <nav class="navbar">
-        <div class="container py-2">
-            <div class="socialIcons d-flex">
-                <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
-                <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
-            </div>
-            <div class="contact">
-                <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-                <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-            </div>
+    <div class="container py-2 d-flex justify-content-between">
+        <div class="socialIcons d-flex">
+            <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
+            <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
         </div>
+        <div class="contact">
+            <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+            <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+        </div>
+    </div>
+    <nav class="navbar">
         <div class="container d-flex align-items-center">
             <div class="logo col-auto"><img src="/logos/gadjetHub1.png"></div>
             <div class="navitems">
@@ -46,6 +46,44 @@
         </div>
     </nav>
 
+    <div id="carouselExampleCaptions" class="carousel slide py-1" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/asus.jpg" class="d-block w-100 heightAdjust"  alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ausus Laptop</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="/images/samsung.jpg" class="d-block w-100 heightAdjust" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item mt">
+            <img src="/images/asus1.png" class="d-block w-100 heightAdjust" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 
 <!-- bootstrap javaScript  -->
