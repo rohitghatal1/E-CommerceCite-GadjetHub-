@@ -3,9 +3,31 @@
     margin: 0;
 }
 
+body{
+   background-color: #0A1828;
+}
+.address{
+    width: 100%;
+    /* background-color: #C4DFE6; */
+    /* background-color: #7DB46CFF; */
+        /* background-color: #E7EBE0FF; */
+        /* background-color: #4D648D; */
+        background-color: #0A1828;
+        color: #178582;
+        /* color: #BFA181; */
+        /* color: #003B46; */
+}
 .navbar{
-    background-color: #f8f9fa;
-    color: black;
+    /* background-color: #0F1F38; */
+    /* background-color: #66A5AD; */
+    /* background-color: #283655; */
+    /* background-color: #E7EBE0FF; */
+    /* color: #003B46; */
+    background-color: #0A1828;
+    color: #BFA181;
+    z-index: 5;
+    
+    /* color: #66A5AD;; */
 }
 
 .logo{
@@ -24,12 +46,15 @@
     align-items: center;
     gap: 2rem;
     font-size: large;
+    cursor: pointer;
 }
 .cartAndLogin .user,
 .cart{
     width: 2rem;
     height: 2rem;
 }
+
+
 
 .cart img,
 .user img{
@@ -52,12 +77,28 @@
     border-radius: 50%;
 }
 
-.carousel{
-    background-color: #edf1f3;
+.banner{
+    position: relative;
 }
-.carousel-item img{
-    aspect-ratio: 2/3;
-    object-fit: contain;
+.banner .photo{
     width: 100%;
-    height: 40rem;
+    height: 50rem;
 }
+.banner .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner .bannerDesc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: left;
+    color: #BFA181;
+}
+/* 7DB46CFF
+E7EBE0FF
+ABD6Dfff */
