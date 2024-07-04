@@ -2,73 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GadjetHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadjetHub</title>
 </head>
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/logos/favicon.png">
 <!-- bootstrap css  -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <!-- link css link for fontawesome icons  -->
 <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
 
 <body>
-    <div class="address py-2 d-flex justify-content-between">
-        <div class="socialIcons d-flex ms-5">
-            <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
-            <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
-        </div>
-        <div class="contact me-5">
-            <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-            <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-        </div>
+  <div class="address py-2 d-flex justify-content-between">
+    <div class="socialIcons d-flex ms-5">
+      <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
+      <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
     </div>
-    <nav class="navbar">
-        <div class="container d-flex align-items-center">
-            <div class="logo col-auto"><img src="/logos/gadgetHub.png"></div>
-            <div class="navitems">
-                <span class="cursor"><a href=""></a>Home</span>
-                <span><a href=""></a>Services</span>
-                <span><a href=""></a>Products</span>
-                <span><a href=""></a>Contact Us</span>
-                <span><a href=""></a>About Us</span>
-            </div>
-            <div class="cartAndLogin d-flex me-2">
-                <figure class="user me-3"><img src="/logos/user.png" class="img-fluid"></figure>
-
-                <div class="cartAndQuantity">
-                    <div class="cart"><img src="/logos/cart1.png" alt=""></div>
-                    <span class="quantity"><sup>5</sup></span>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="banner">
-      <div class="photo">
-        <img src="/images/laptopMobiles.jpg" alt="">
+    <div class="contact me-5">
+      <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+      <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="container d-flex align-items-center" id="navItemContainer">
+      <div class="logo col-auto"><img src="/logos/gadgetHub.png"></div>
+      <div class="navitems">
+        <span class="cursor"><a href=""></a>Home</span>
+        <span><a href=""></a>Services</span>
+        <span><a href=""></a>Products</span>
+        <span><a href=""></a>Contact Us</span>
+        <span><a href=""></a>About Us</span>
       </div>
-      <div class="bannerDesc">
-        <h2>The best place</h2>
-        <h3>To buy <span id="products"></span><span class="tcursor">|</span></h3>
-        <h3>In Affordable price</h3>
+      <div class="cartAndLogin d-flex me-2">
+        <figure class="user me-3"><img src="/logos/user.png" class="img-fluid"></figure>
+
+        <div class="cartAndQuantity">
+          <div class="cart"><img src="/logos/cart1.png" alt=""></div>
+          <span class="quantity"><sup>5</sup></span>
+        </div>
       </div>
     </div>
+  </nav>
 
-      <div class="services">
-        <div class="container">
-          <div class="service"></div>
+  <div class="banner">
+    <div class="photo">
+      <img src="/images/laptopMobiles.jpg" alt="">
+    </div>
+    <div class="bannerDesc">
+      <h2>The best place</h2>
+      <h2>To buy <span id="products"></span><span class="tcursor">|</span></h2>
+      <h2>In Affordable price</h2>
+    </div>
+  </div>
+
+  <div class="services py-3">
+    <h2 class="w-100 text-center">Services</h2>
+    <div class="container mt-3 d-flex gap-5">
+
+      <div class="service">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="serviceDetail">
+          <h4>FREE DELIVERY</h4>
+          <p>We provide the free home delivery service</p>
         </div>
       </div>
+
+      <div class="service">
+        <i class="fa-solid fa-medal"></i>
+        <div class="serviceDetail">
+          <h4>QUALITY GUARANTEE</h4>
+          <p>We sell the best quality products</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-tag"></i>
+        <div class="serviceDetail">
+          <h3>DAILY OFFERS</h3>
+          <p>We provide the best daily offers</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-shield"></i>
+        <div class="serviceDetail">
+          <h3>SECURE PAYMENT</h3>
+          <p>We have integrated the security mechanisms for payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <!-- bootstrap javaScript  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
 </html>
