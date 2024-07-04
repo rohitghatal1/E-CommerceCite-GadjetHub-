@@ -163,6 +163,34 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px;
     margin-top: 0.5rem;
 }
+
+.card {
+    margin: auto;
+  }
+.card img{
+    /* max-height: 25rem; */
+    aspect-ratio: 3/2;
+}
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev, .carousel-inner .carousel-item.active {
+      display: flex !important;
+    }
+    .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+    .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start { 
+      transform: translateX(0);
+    }
+  }
 /* 7DB46CFF
 E7EBE0FF
 ABD6Dfff */

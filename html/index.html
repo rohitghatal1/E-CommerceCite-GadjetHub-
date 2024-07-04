@@ -10,13 +10,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/logos/favicon1.png">
 <!-- bootstrap css  -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- link css link for fontawesome icons  -->
 <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
 
 <body>
+
+  <!-- ----------------------------------------------------Navbar  section--------------------------------------------- -->
   <header>
     <div class="address pt-3 d-flex justify-content-between">
       <div class="socialIcons d-flex ms-5">
@@ -41,16 +42,19 @@
       <div class="container d-flex align-items-center" id="navItemContainer">
         <div class="logo col-auto"><img src="/logos/gadgetHub.png"></div>
         <div class="navitems">
-          <span class="cursor"><a href=""></a>Home</span>
+          <span class="cursor"><a href="index.html">Home</a></span>
           <span><a href="#services">Services</a></span>
-          <span><a href=""></a>Products</span>
-          <span><a href=""></a>Contact Us</span>
-          <span><a href=""></a>About Us</span>
+          <span><a href="#productsSection">Products</a></span>
+          <span><a href="">Contact Us</a></span>
+          <span><a href="">About Us</a></span>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- -----------------------------------------------Navbar section end -------------------------------------------------------- -->
+
+  <!-- ----------------------------------------------------Website banner section------------------------------------------------ -->
   <div class="banner">
     <div class="photo">
       <img src="/images/laptopMobiles.jpg" alt="">
@@ -97,11 +101,165 @@
       </div>
     </div>
   </div>
+
+  <!-- --------------------------------------------------------Banner sectin end--------------------------------------------------- -->
+
+
+  <!-- -------------------------------------------------------------Products Section ---------------------------------------------- -->
+  <section class="productSection mt-3 container" id="productsSection">
+    <div class="mobleProducts px-2">
+      <h2 class="pt-3">Mobile Products</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/samsung.jpg" class="card-img-top" alt="Testimonial 1">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung Mobile</h5>
+                  <p class="card-text">Testimonial from customer 1.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/honor.jpg" class="card-img-top" alt="Testimonial 2">
+                <div class="card-body">
+                  <h5 class="card-title">Honor Mobile</h5>
+                  <p class="card-text">Testimonial from customer 2.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/poco.jpg" class="card-img-top" alt="Testimonial 3">
+                <div class="card-body">
+                  <h5 class="card-title">Poco Mobile</h5>
+                  <p class="card-text">Testimonial from customer 3.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/iphone.webp" class="card-img-top" alt="Testimonial 4">
+                <div class="card-body">
+                  <h5 class="card-title">Iphone</h5>
+                  <p class="card-text">Testimonial from customer 4.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/samsung.jpg" class="card-img-top" alt="Testimonial 5">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung</h5>
+                  <p class="card-text">Testimonial from customer 5.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/honor.jpg" class="card-img-top" alt="Testimonial 6">
+                <div class="card-body">
+                  <h5 class="card-title">Honor</h5>
+                  <p class="card-text">Testimonial from customer 6.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="laptopProducts px-2 my-4">
+      <h2 class="pt-3">Laptops</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop1.jpg" class="card-img-top" alt="Testimonial 1">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung Mobile</h5>
+                  <p class="card-text">Testimonial from customer 1.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop2.jpg" class="card-img-top" alt="Testimonial 2">
+                <div class="card-body">
+                  <h5 class="card-title">Honor Mobile</h5>
+                  <p class="card-text">Testimonial from customer 2.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop3.jpg" class="card-img-top" alt="Testimonial 3">
+                <div class="card-body">
+                  <h5 class="card-title">Poco Mobile</h5>
+                  <p class="card-text">Testimonial from customer 3.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop4.jpg" class="card-img-top" alt="Testimonial 4">
+                <div class="card-body">
+                  <h5 class="card-title">Iphone</h5>
+                  <p class="card-text">Testimonial from customer 4.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop2.jpg" class="card-img-top" alt="Testimonial 5">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung</h5>
+                  <p class="card-text">Testimonial from customer 5.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="/images/laptop1.jpg" class="card-img-top" alt="Testimonial 6">
+                <div class="card-body">
+                  <h5 class="card-title">Honor</h5>
+                  <p class="card-text">Testimonial from customer 6.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 </body>
 
 <!-- bootstrap javaScript  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 <script src="/js/script.js"></script>
 
