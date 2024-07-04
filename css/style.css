@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 .banner .bannerDesc{
     position: absolute;
     top: 0;
-    left: 5rem;
+    left: 2rem;
     margin-top: 5rem;
     width: 90%;
     height: 100%;

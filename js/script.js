@@ -1,8 +1,8 @@
 const products = document.getElementById("products");
-const allProducts = ["Laptops", "Mobiles", "Smart Watches"];
+const allProducts = ["Laptops", "Mobile Phones", "Smart Watches"];
 let arrayIndex = 0;
 let charIndex = 0;
-let typingDelay = 200;
+let typingDelay = 150;
 let erasingDelay = 100;
 let newTextDelay = 2000;
 
