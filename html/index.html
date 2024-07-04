@@ -17,36 +17,39 @@
 <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
 
 <body>
-  <div class="address py-2 d-flex justify-content-between">
-    <div class="socialIcons d-flex ms-5">
-      <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
-      <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
-    </div>
-    <div class="contact me-5">
-      <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-      <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
-    </div>
-  </div>
-  <nav class="navbar">
-    <div class="container d-flex align-items-center" id="navItemContainer">
-      <div class="logo col-auto"><img src="/logos/gadgetHub.png"></div>
-      <div class="navitems">
-        <span class="cursor"><a href=""></a>Home</span>
-        <span><a href=""></a>Services</span>
-        <span><a href=""></a>Products</span>
-        <span><a href=""></a>Contact Us</span>
-        <span><a href=""></a>About Us</span>
+  <header>
+    <div class="address pt-3 d-flex justify-content-between">
+      <div class="socialIcons d-flex ms-5">
+        <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
+        <span class="ms-3"><i class="fab fa-instagram w-50"></i></span>
       </div>
-      <div class="cartAndLogin d-flex me-2">
-        <figure class="user me-3"><img src="/logos/user.png" class="img-fluid"></figure>
 
-        <div class="cartAndQuantity">
-          <div class="cart"><img src="/logos/cart1.png" alt=""></div>
-          <span class="quantity"><sup>5</sup></span>
+      <div class="contact me-5 d-flex">
+        <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+        <span class="me-3"><i class="fa fa-phone"></i> 9856435452</span>
+        <div class="cartAndLogin d-flex me-2">
+          <div class="user me-3"><i class="fa-solid fa-user"></i></div>
+          <div class="cartAndQuantity">
+            <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+            <span class="quantity"><sup>5</sup></span>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
+
+    <nav class="navbar">
+      <div class="container d-flex align-items-center" id="navItemContainer">
+        <div class="logo col-auto"><img src="/logos/gadgetHub.png"></div>
+        <div class="navitems">
+          <span class="cursor"><a href=""></a>Home</span>
+          <span><a href="#services">Services</a></span>
+          <span><a href=""></a>Products</span>
+          <span><a href=""></a>Contact Us</span>
+          <span><a href=""></a>About Us</span>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div class="banner">
     <div class="photo">
@@ -59,7 +62,7 @@
     </div>
   </div>
 
-  <div class="services py-3">
+  <div class="services py-3" id="services">
     <h2 class="w-100 text-center">Services</h2>
     <div class="container mt-3 d-flex gap-5">
 

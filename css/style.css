@@ -2,7 +2,22 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+    /* color: #BFA181; */
+    /* color: #003B46; */
+    /* background-color: #C4DFE6; */
+    /* background-color: #7DB46CFF; */
+    /* background-color: #E7EBE0FF; */
+    /* background-color: #4D648D; */
+    /* background-color: #0F1F38; */
+    /* background-color: #66A5AD; */
+    /* background-color: #283655; */
+    /* background-color: #E7EBE0FF; */
+    /* color: #003B46; */
+    /* color: #66A5AD;; */
 body{
    background-color: #0A1828;
 }
@@ -16,41 +31,30 @@ body::-webkit-scrollbar-track {
     background-color: #4D648D;
 }
 
-
-/* Style the scrollbar thumb */
 body::-webkit-scrollbar-thumb {
     background-color: #0A1828;
     border-radius: 0.6rem; 
 }
-
 .address{
     width: 100%;
-    /* background-color: #C4DFE6; */
-    /* background-color: #7DB46CFF; */
-        /* background-color: #E7EBE0FF; */
-        /* background-color: #4D648D; */
-        background-color: #0A1828;
-        color: #178582;
-        /* color: #BFA181; */
-        /* color: #003B46; */
-}
-.navbar{
-    /* background-color: #0F1F38; */
-    /* background-color: #66A5AD; */
-    /* background-color: #283655; */
-    /* background-color: #E7EBE0FF; */
-    /* color: #003B46; */
     background-color: #0A1828;
     color: #BFA181;
-    z-index: 5;
-    /* color: #66A5AD;; */
+    cursor: pointer;
+}
+.address i{
+    color: #178582;
+    font-size: 20px;
 }
 
-#navItemContainer{
-    position: sticky;
-    top: 0;
+.navbar{
+    background-color: #0A1828;
+    color: #BFA181;
 }
 
+.navbar a{
+    text-decoration: none;
+    color: #BFA181;
+}
 .logo{
     width: 6rem;
     height: 8rem;
@@ -73,6 +77,7 @@ body::-webkit-scrollbar-thumb {
 .cart{
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 .cart img,
@@ -92,7 +97,8 @@ body::-webkit-scrollbar-thumb {
     width: 1rem;
     height: 1rem;
     text-align: center;
-    background-color: #ccc;
+    background-color: #E7EBE0FF;
+    color: black;
     border-radius: 50%;
 }
 
@@ -147,7 +153,6 @@ body::-webkit-scrollbar-thumb {
 
 .services{
     background-color: #C4DFE6;
-    
 }
 .service{
     display: flex;
