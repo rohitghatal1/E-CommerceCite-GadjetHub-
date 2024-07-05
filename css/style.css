@@ -56,13 +56,16 @@ body::-webkit-scrollbar-thumb {
     color: #BFA181;
 }
 .logo{
-    width: 6rem;
-    height: 8rem;
+    width: 3rem;
+    height: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .logo img{
     width: 100%;
     height: 100%;
+    filter: brightness(3) contrast(5);
     object-fit: cover;
 }
 
@@ -168,14 +171,19 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
   }
 .card img{
-    /* max-height: 25rem; */
-    aspect-ratio: 3/2;
+    aspect-ratio: 3/2.9;
 }
+
   .carousel-item {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     padding: 0.5rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0.5);
   }
   @media (min-width: 768px) {
     .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev, .carousel-inner .carousel-item.active {
