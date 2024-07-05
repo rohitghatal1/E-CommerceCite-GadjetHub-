@@ -18,7 +18,7 @@
 <body>
 
   <!-- ----------------------------------------------------Navbar  section--------------------------------------------- -->
-  <header>
+  <header id="top">
     <div class="address pt-3 d-flex justify-content-between">
       <div class="socialIcons d-flex ms-5">
         <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
@@ -45,8 +45,8 @@
           <span class="cursor"><a href="index.html">Home</a></span>
           <span><a href="#services">Services</a></span>
           <span><a href="#productsSection">Products</a></span>
-          <span><a href="">Contact Us</a></span>
-          <span><a href="">About Us</a></span>
+          <span><a href="#aboutSection">About Us</a></span>
+          <span><a href="#contactSection">Contact Us</a></span>
         </div>
       </div>
     </nav>
@@ -407,13 +407,18 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-md-4">
               <div class="card">
                 <img src="/images/laptop1.jpg" class="card-img-top" alt="Testimonial 6">
                 <div class="card-body">
                   <h5 class="card-title">Honor</h5>
                   <p class="card-text">Testimonial from customer 6.</p>
+                </div>
+                <div class="laptopDetails">
+                  <h2>Honor</h2>
+                  <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
+                  <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -430,7 +435,19 @@
       </div>
     </div>
   </section>
-  
+<!-- ---------------------------------------------------------------------Products  section end ----------------------------------------  -->
+  <section class="aboutSection" id="aboutSection">
+    <div class="container aboutUsContainer">
+      <h2 class="text-center">About Us</h2>
+    </div>
+  </section>
+
+  <div class="goTotopBtn">
+    <a href="#top">&#x5e;</a>
+  </div>
+  <div class="feedbackbtn">
+    <h5>Feedback <i class="fa-solid fa-pen"></i></h5>
+  </div>
 </body>
 
 <!-- bootstrap javaScript  -->

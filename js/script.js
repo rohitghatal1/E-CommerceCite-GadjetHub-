@@ -32,3 +32,33 @@ function erase(){
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, newTextDelay);
 });
+
+// to show and hide move to top button 
+document.addEventListener("DOMContentLoaded", function() {
+    var hiddenDiv = document.getElementById('hiddenDiv');
+    var otherSection = document.getElementById('otherSection');
+
+    // Function to check if a section is in viewport
+    function isInViewport(elem) {
+        var bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    // Function to handle scroll event
+    function handleScroll() {
+        if (isInViewport(otherSection)) {
+            hiddenDiv.style.display = 'block'; // Show hidden div
+        } else {
+            hiddenDiv.style.display = 'none'; // Hide hidden div
+        }
+    }
+
+    // Initial check on page load
+    handleScroll();
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+});

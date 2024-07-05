@@ -202,6 +202,10 @@ body::-webkit-scrollbar-thumb {
     aspect-ratio: 3/2.9;
 }
 
+.laptopProducts .card img{
+    aspect-ratio: 3/2.2;
+}
+
 .card .mobileDetails,
 .card .laptopDetails,
 .card .watchDetails {
@@ -240,6 +244,33 @@ body::-webkit-scrollbar-thumb {
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 0.4rem;
+}
+
+.goTotopBtn{
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #106ebe;
+    right: 5rem;
+    bottom: 3rem;
+    text-align: center;
+}
+.goTotopBtn a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fff;
+}
+.feedbackbtn{
+    position: fixed;
+    right: -2.01rem;
+    bottom: 5rem;
+    transform: rotate(270deg);
+    background-color: #106ebe;
+    color: #fff;
+    padding: 0.4rem;
+    cursor: pointer;
 }
 /* 7DB46CFF
 E7EBE0FF
