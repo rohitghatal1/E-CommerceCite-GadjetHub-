@@ -33,12 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, newTextDelay);
 });
 
-// to show and hide move to top button 
-document.addEventListener("DOMContentLoaded", function() {
-    var hiddenDiv = document.getElementById('hiddenDiv');
-    var otherSection = document.getElementById('otherSection');
 
-    // Function to check if a section is in viewport
+// to diplay the go to top button if user scrolls downward 
+document.addEventListener("DOMContentLoaded", function() {
+    var hiddenDiv = document.getElementById('goToTop');
+    var topSection = document.getElementById('top');
+
+    // Function to check if an element is in viewport
     function isInViewport(elem) {
         var bounding = elem.getBoundingClientRect();
         return (
@@ -49,16 +50,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to handle scroll event
     function handleScroll() {
-        if (isInViewport(otherSection)) {
-            hiddenDiv.style.display = 'block'; // Show hidden div
+        if (isInViewport(topSection)) {
+            hiddenDiv.style.display = 'none';
         } else {
-            hiddenDiv.style.display = 'none'; // Hide hidden div
+            hiddenDiv.style.display = 'block';
         }
     }
 
-    // Initial check on page load
     handleScroll();
 
-    // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
 });
+

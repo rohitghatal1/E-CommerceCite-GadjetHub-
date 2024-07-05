@@ -247,6 +247,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .goTotopBtn{
+    display: none;
     position: fixed;
     width: 2rem;
     height: 2rem;
