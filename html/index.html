@@ -17,8 +17,8 @@
 
 <!-- google fonts  -->
 <link
-href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
-rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+  rel="stylesheet">
 
 <body>
 
@@ -488,8 +488,33 @@ rel="stylesheet">
   <div class="goTotopBtn" id="goToTop">
     <a href="#top">&#x5e;</a>
   </div>
-  <div class="feedbackbtn">
+  <div class="feedbackbtn" onclick="openFeedbackForm()">
     <h5>Feedback <i class="fa-solid fa-pen"></i></h5>
+  </div>
+
+  <div class="feedBackForm" id="feedbackForm">
+      <div class="feedbackHeading d-flex justify-content-between align-items-center">
+        <h3 class="text-center">Give Feedback</h3>
+        <span class="fs-5 closeFeedback" onclick="closeFeedbackForm()">&times;</span>
+      </div>
+
+      <div class="formContainer mt-3">
+        <form action="#">
+          <label for="name">Name</label>
+          <input class="feedbackInputs" type="text" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input class="feedbackInputs" type="email" placeholder="Your email">
+
+          <label for="contact">Contact No.</label>
+          <input class="feedbackInputs" type="text" placeholder="Your contact number">
+
+          <label for="feedback">Feedback</label>
+          <textarea class="feedbackInputs" placeholder="Feedback" rows="6"></textarea>
+
+          <input type="submit" class="submitFeedback" value="Submit">
+        </form>
+      </div>
   </div>
 </body>
 

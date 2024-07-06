@@ -61,5 +61,12 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', handleScroll);
 });
 
-
-
+// to open feedbback form 
+let feedbackForm = document.getElementById("feedbackForm");
+function openFeedbackForm(){
+    feedbackForm.style.display = "block";
+    feedbackForm.style.width = "20rem";
+}
+function closeFeedbackForm(){
+    feedbackForm.style.display = "none";
+}

@@ -284,3 +284,39 @@ body::-webkit-scrollbar-thumb {
     color: #003B46;
     margin-top: 0;
 }
+
+.feedBackForm{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    display: none;
+    z-index: 10;
+    background-color: #0A1828;
+    color: #BFA181;
+    padding: 1rem;
+    transition: width 1s all ease;
+}
+
+.closeFeedback{
+    cursor: pointer;
+}
+
+.feedBackForm .formContainer .feedbackInputs{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    border: none;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.feedBackForm .formContainer .submitFeedback{
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: #0A1828;
+    color: #BFA181;
+    border: 1px solid #BFA181;
+    border-radius: 0.4rem;
+}
