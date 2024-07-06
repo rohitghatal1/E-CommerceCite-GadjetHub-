@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, newTextDelay);
 });
 
-
 // to diplay the go to top button if user scrolls downward 
 document.addEventListener("DOMContentLoaded", function() {
     var hiddenDiv = document.getElementById('goToTop');
@@ -61,4 +60,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('scroll', handleScroll);
 });
+
+
 
