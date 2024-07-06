@@ -251,6 +251,33 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.4rem;
 }
 
+.aboutSection{
+    background-color: #C4DFE6;
+    color: #003B46;
+    margin-top: 0;
+    border-bottom: 1px solid #BFA181;
+}
+
+.contactUsSection{
+    background-color: #C4DFE6;
+    color: #003B46;
+    border-bottom: 1px solid #BFA181;
+}
+
+.contactUsContainer{
+    background-color: #0A1828;
+    color: #BFA181;
+}
+
+.sendMessageSection{
+    border-right: 2px solid #C4DFE6;
+}
+
+.getInTouchSection  .socialIcons{
+    text-decoration: none;
+    color: #BFA181;
+}
+
 .goTotopBtn{
     display: none;
     position: fixed;
@@ -262,12 +289,14 @@ body::-webkit-scrollbar-thumb {
     bottom: 3rem;
     text-align: center;
 }
+
 .goTotopBtn a{
     text-decoration: none;
     font-size: 24px;
     font-weight: bolder;
     color: #fff;
 }
+
 .feedbackbtn{
     position: fixed;
     right: -2.01rem;
@@ -277,12 +306,6 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     padding: 0.4rem;
     cursor: pointer;
-}
-
-.aboutSection{
-    background-color: #C4DFE6;
-    color: #003B46;
-    margin-top: 0;
 }
 
 .feedBackForm{
@@ -303,7 +326,8 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.feedBackForm .formContainer .feedbackInputs{
+.feedBackForm .formContainer .feedbackInputs,
+.contactUsSection .sendMessageSection  .sendMessageInputs{
     width: 100%;
     padding: 0.4rem;
     border-radius: 0.2rem;
