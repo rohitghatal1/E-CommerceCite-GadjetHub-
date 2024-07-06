@@ -9,7 +9,12 @@ html{
 body{
    background-color: #0A1828;
 }
-
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Merienda', cursive;
+}
+body p,a,span,button{
+    font-family: 'Poppins', sans-serif;
+}
 body::-webkit-scrollbar {
     width: 5px;
     background: transparent;
@@ -150,7 +155,10 @@ body::-webkit-scrollbar-thumb {
 .service{
     display: flex;
     gap: 0.8rem;
-    max-width: 18rem;
+    max-width: 19rem;
+}
+.service p{
+    font-size: medium;
 }
 .service i{
     font-size: 30px;
@@ -276,16 +284,3 @@ body::-webkit-scrollbar-thumb {
     color: #003B46;
     margin-top: 0;
 }
-/* 7DB46CFF
-E7EBE0FF
-ABD6Dfff */
-    /* color: #BFA181; */
-    /* background-color: #C4DFE6; */
-    /* background-color: #7DB46CFF; */
-    /* background-color: #E7EBE0FF; */
-    /* background-color: #4D648D; */
-    /* background-color: #0F1F38; */
-    /* background-color: #66A5AD; */
-    /* background-color: #283655; */
-    /* color: #003B46; */
-    /* color: #66A5AD;; */
