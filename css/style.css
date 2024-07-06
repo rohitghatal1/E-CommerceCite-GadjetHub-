@@ -6,18 +6,6 @@ html{
     scroll-behavior: smooth;
 }
 
-    /* color: #BFA181; */
-    /* color: #003B46; */
-    /* background-color: #C4DFE6; */
-    /* background-color: #7DB46CFF; */
-    /* background-color: #E7EBE0FF; */
-    /* background-color: #4D648D; */
-    /* background-color: #0F1F38; */
-    /* background-color: #66A5AD; */
-    /* background-color: #283655; */
-    /* background-color: #E7EBE0FF; */
-    /* color: #003B46; */
-    /* color: #66A5AD;; */
 body{
    background-color: #0A1828;
 }
@@ -156,6 +144,8 @@ body::-webkit-scrollbar-thumb {
 
 .services{
     background-color: #C4DFE6;
+    color: #003B46;
+    border-bottom: 1px solid #BFA181;
 }
 .service{
     display: flex;
@@ -165,6 +155,11 @@ body::-webkit-scrollbar-thumb {
 .service i{
     font-size: 30px;
     margin-top: 0.5rem;
+}
+.productSection{
+    background-color: #C4DFE6;
+    color: #003B46;
+    border-bottom: 1px solid #BFA181;
 }
   .carousel-item {
     display: flex;
@@ -196,6 +191,8 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     position: relative;
     overflow: hidden;
+    background-color: #C4DFE6 !important;
+    color: #003B46 !important;
 }
 
 .card img {
@@ -246,23 +243,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.4rem;
 }
 
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
 .goTotopBtn{
     display: none;
     position: fixed;
@@ -290,6 +270,22 @@ body::-webkit-scrollbar-thumb {
     padding: 0.4rem;
     cursor: pointer;
 }
+
+.aboutSection{
+    background-color: #C4DFE6;
+    color: #003B46;
+    margin-top: 0;
+}
 /* 7DB46CFF
 E7EBE0FF
 ABD6Dfff */
+    /* color: #BFA181; */
+    /* background-color: #C4DFE6; */
+    /* background-color: #7DB46CFF; */
+    /* background-color: #E7EBE0FF; */
+    /* background-color: #4D648D; */
+    /* background-color: #0F1F38; */
+    /* background-color: #66A5AD; */
+    /* background-color: #283655; */
+    /* color: #003B46; */
+    /* color: #66A5AD;; */
