@@ -248,7 +248,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(calc(-100% + 1rem)); /* Slide up into view */
 }
 
-
 .addToCartBtn{
     background-color: #0A1828;
     color: #BFA181;
@@ -268,7 +267,6 @@ body::-webkit-scrollbar-thumb {
 .contactUsSection{
     background-color: #C4DFE6;
     color: #003B46;
-    border-bottom: 1px solid #BFA181;
 }
 
 .contactUsContainer{
@@ -357,6 +355,9 @@ footer{
     color: #BFA181;
 }
 
+.footerSection{
+    border-bottom: 1px solid #BFA181;
+}
 .footerSection .about{
     width: 50%;
 }
@@ -385,6 +386,22 @@ footer{
     color: #BFA181;
 }
 
-.footerSection .socialSection{
+.footerSection .socialAndRatings{
     width: 20%
+}
+
+.footerSection .socialSection span{
+    cursor: pointer;
+}
+
+.ratingsContainer .stars{
+    cursor: pointer;
+}
+.star{
+    font-size: 2rem;
+    color: gray;
+    transition: color 0.3s;
+}
+.star.selected{
+    color: gold;
 }

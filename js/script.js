@@ -70,3 +70,30 @@ function openFeedbackForm(){
 function closeFeedbackForm(){
     feedbackForm.style.display = "none";
 }
+
+// script for rating section 
+document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = star.getAttribute('data-value');
+        setRating(rating);
+      });
+    });
+  });
+  
+  function setRating(rating) {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+      if (parseInt(star.getAttribute('data-value')) <= rating) {
+        star.classList.add('selected');
+      } else {
+        star.classList.remove('selected');
+      }
+    });
+  
+    // Display the rating value (you can customize this part)
+    const ratingText = document.querySelector('.rating-text');
+    ratingText.textContent = `You rated us ${rating} out of 5`;
+  }
+  
