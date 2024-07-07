@@ -390,7 +390,9 @@ footer{
     width: 20%
 }
 
-.footerSection .socialSection span{
+.footerSection .socialSection a{
+    text-decoration: none;
+    color: #BFA181;
     cursor: pointer;
 }
 
