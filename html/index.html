@@ -23,7 +23,7 @@
 <body>
 
   <!-- ----------------------------------------------------Navbar  section--------------------------------------------- -->
-  <header>
+  <header id="start">
     <div class="address pt-3 d-flex justify-content-between">
       <div class="socialIcons d-flex ms-5">
         <span class="ms-3"><i class="fab fa-facebook w-50"></i></span>
@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <div class="services py-3" id="services">
+  <div class="services py-5" id="services">
     <h2 class="w-100 text-center">Services</h2>
     <div class="container mt-3 d-flex gap-5">
 
@@ -460,7 +460,7 @@
           <img src="/images/abouUs.webp" alt="About Us" class="img-fluid">
         </div>
         <div class="col-md-6">
-          <p>
+          <p >
             Welcome to GadgetHub, your one-stop shop for the latest and greatest in mobiles, smartwatches, and
             laptops. Established in 2020, we have been committed to providing our customers with top-quality products
             and exceptional service.
@@ -507,7 +507,7 @@
 
         <div class="socialMedia mt-3">
           <h3 class="mt-3">Follow us on:</h3>
-          <a href="" class="socialIcons ms-3"><i class="fab fa-facebook"></i> Febook</a>
+          <a href="" class="socialIcons ms-3"><i class="fab fa-facebook"></i> Facebook</a>
           <a href="" class="socialIcons ms-3"><i class="fab fa-instagram"></i> Instagram</a>
         </div>
       </div>
@@ -515,7 +515,8 @@
   </section>
 
   <div class="goTotopBtn" id="goToTop">
-    <a href="#top">&#x5e;</a>
+    <a href="#start">&#x5e;</a>
+    <span</span>
   </div>
   <div class="feedbackbtn" onclick="openFeedbackForm()">
     <h5>Feedback <i class="fa-solid fa-pen"></i></h5>
@@ -545,6 +546,33 @@
         </form>
       </div>
   </div>
+
+  <footer class="py-3">
+    <section class="footerSection container d-flex justify-content-between">
+
+      <div class="about">
+        <figure class="websiteLogo"><img src="/logos/gadgetHub3.png" alt=""></figure>
+        <p>Hello! Welcome to GadgetHub, here we provide the best quality products in affordable price. Started in 2022 we are prividing
+          best deals for 2 years with good customer experience and support.
+        </p>
+      </div>
+
+      <div class="tabLinks d-flex flex-column gap-2 ps-3">
+        <h3>Scroll to:</h3>
+        <span><a href="#top">Home</a></span>
+        <span><a href="#services">Services</a></span>
+        <span><a href="#productsSection">Products</a></span>
+        <span><a href="#aboutSection">About Us</a></span>
+        <span><a href="#contactSection">Contact Us</a></span>
+      </div>
+
+      <div class="socialSection d-flex flex-column gap-2">
+        <h3>Follow us on:</h3>
+        <span><i class="fab fa-facebook"></i> Facebook</span>
+        <span><i class="fab fa-instagram"></i> Instagram</span>
+      </div>
+    </section>
+  </footer>
 </body>
 
 <!-- bootstrap javaScript  -->
