@@ -1,0 +1,13 @@
+@media (max-width: 600px){
+    .servicesContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .service{
+        display: flex;
+        gap: 0.8rem;
+        width: 15rem;
+    }
+}
