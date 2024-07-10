@@ -1,4 +1,15 @@
 @media (max-width: 600px){
+    .address i{
+        color: #178582;
+        font-size: small;
+    }
+
+    .navbar{
+        position: relative;
+        top: 4rem;
+        background-color: #0A1828;
+        color: #BFA181;
+    }
     .servicesContainer{
         display: flex;
         justify-content: center;
