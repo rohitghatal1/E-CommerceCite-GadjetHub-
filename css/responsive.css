@@ -4,6 +4,20 @@
         font-size: small;
     }
 
+    .socialIcons{
+        margin-left: 2px;
+    }
+
+    .socialIcons span{
+        margin-left: 2px
+    }
+
+    .contact{
+        margin-right: 5px;
+    }
+    .contact span{
+        margin-right: 3px
+    }
     .navbar{
         position: relative;
         top: 4rem;
@@ -34,6 +48,22 @@
 
     .contactUsContainer .sendMessageSection{
         border-right: none;
+    }
+
+    .goTotopBtn{
+        display: none;
+        position: fixed;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #106ebe;
+        right: 1rem;
+        bottom: 2rem;
+        text-align: center;
+    }
+
+    .feedbackbtn{
+        display: none;
     }
 
     footer{
