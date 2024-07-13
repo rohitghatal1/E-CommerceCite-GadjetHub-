@@ -10,6 +10,10 @@
         background-color: #0A1828;
         color: #BFA181;
     }
+
+    .navitems{
+        display: none;
+    }
     .servicesContainer{
         display: flex;
         justify-content: center;
@@ -20,5 +24,15 @@
         display: flex;
         gap: 0.8rem;
         width: 15rem;
+    }
+
+    .contactUsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contactUsContainer .sendMessageSection{
+        border-right: none;
     }
 }
