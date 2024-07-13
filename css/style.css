@@ -50,6 +50,9 @@ body::-webkit-scrollbar-thumb {
     color: #BFA181;
 }
 
+.mobileNavbar{
+    display:none !important;
+}
 .navbar a{
     text-decoration: none;
     color: #BFA181;
