@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
 }
 .banner .photo{
     width: 100%;
-    height: 60rem;
+    height: 40rem;
 }
 .banner .photo img{
     width: 100%;
@@ -124,12 +124,12 @@ body::-webkit-scrollbar-thumb {
 .banner .bannerDesc{
     position: absolute;
     top: 0;
-    left: 2rem;
-    margin-top: 5rem;
-    width: 90%;
+    right: 2rem;
+    margin-top: 0.2rem;
+    width: 100%;
     height: 100%;
     z-index: 2;
-    text-align: left;
+    text-align: center;
     color: #BFA181;
 }
 
