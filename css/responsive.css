@@ -3,24 +3,12 @@
         color: #178582;
         font-size: small;
     }
-
-    .socialIcons{
-        margin-left: 2px;
-    }
-
-    .socialIcons span{
-        margin-left: 2px
-    }
-
-    .contact{
-        margin-right: 5px;
-    }
     .contact span{
-        margin-right: 3px
+        font-size: smaller;
     }
     .navbar{
         position: relative;
-        top: 4rem;
+        top: 2rem;
         background-color: #0A1828;
         color: #BFA181;
     }
