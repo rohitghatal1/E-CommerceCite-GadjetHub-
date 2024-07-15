@@ -358,7 +358,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #0A1828;
     color: #BFA181;
     padding: 1rem;
-    transition: width 1s all ease;
+    transition: width 3s all ease;
 }
 
 .closeFeedback{
