@@ -139,9 +139,24 @@
     footer{
         font-size: small;
     }
+
+    .footerSection .about{
+        width: 45%;
+    }
+
+    .footerSection .tabLinks{
+        width: 35%;
+        margin-left: 0.4rem;
+    }
+
+    .footerSection .socialAndRatings{
+        width: 20%
+    }
+
     .about .websiteLogo{
-        width: 5rem;
+        width: 11rem;
         height: 3rem;
+        border-radius: 0;
     }
     
     .about .websiteLogo img{
@@ -159,9 +174,13 @@
         font-size: medium;
     }
 
+    .ratingsContainer{
+        margin-right: 0.5rem;
+    }
     .ratingsContainer h3{
         font-size: medium;
     }
+
     .star{
         font-size: 1rem;
         color: gray;
