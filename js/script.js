@@ -1,11 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+
 let loginModal = document.getElementById("loginModal");
 let signupModal = document.getElementById("signupModal");
 // for opening login modal 

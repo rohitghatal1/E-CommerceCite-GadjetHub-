@@ -211,6 +211,27 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 1px solid #BFA181;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #c4dfe6; */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .carousel-item {
     display: flex;
     justify-content: center;
