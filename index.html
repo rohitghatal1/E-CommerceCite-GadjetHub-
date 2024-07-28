@@ -17,7 +17,8 @@
 <!-- link css link for fontawesome icons  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<!-- <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css"> -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <!-- google fonts  -->
 <link
@@ -198,224 +199,71 @@
     <div class="productsContainer container">
       <div class="mobleProducts px-2">
         <h2 class="pt-3">Mobiles</h2>
-        <div id="carouselMobileControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="col-md-4">
+        <div class="container">
+          <div class="swiper mySwiper" style="height: 32rem">
+            <div class="swiper-wrapper">
+      
+              <!-- Dummy data for laptop cards -->
+              <div class="swiper-slide">
                 <div class="card">
-                  <img src="images/samsung.jpg" class="card-img-top" alt="Testimonial 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Samsung Mobile</h5>
-                    <p class="card-text">RS. 150000</p>
+                  <figure class="productPhoto" style="height:22.2rem">
+                    <img src="images/asus.jpg" class="card-img-top" alt="laptop image" style="height:100%">
+                  </figure>
+                  <div class="card-body" style="height:8.7rem">
+                    <h5 class="card-title mt-3">Brand Name</h5>
+                    <p class="card-text mt-3">Rs50,000</p>
                   </div>
-
-                  <div class="mobileDetails">
-                    <h2>Samsung Galaxy S24</h2>
-                    <p>16GB RAM, 1TB Storage, 100MP Rear Camera, 30MP Front Camera, 6000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                  <div class="watchDetails">
+                    <h2>Asus</h2>
+                    <p><strong>Model:</strong> <span>ZenBook Pro</span></p>
+                    <p><strong>Processor:</strong> <span>Intel Core i7</span></p>
+                    <p><strong>RAM:</strong> <span>16GB</span></p>
+                    <p><strong>Graphics:</strong> <span>NVIDIA GTX 1650</span></p>
+                    <p><strong>Price:</strong> <span>Rs50,000</span></p>
+                    <p><strong>Other Details:</strong> <span>1TB SSD, 4K Display</span></p>
+                    <button class="addToCartBtn" onclick="handleAddToCart(123, 'laptops')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                   </div>
                 </div>
               </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/honor.jpg" class="card-img-top" alt="Testimonial 2">
-                  <div class="card-body">
-                    <h5 class="card-title">Honor Mobile</h5>
-                    <p class="card-text">Testimonial from customer 2.</p>
-                  </div>
-                  <div class="mobileDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/poco.jpg" class="card-img-top" alt="Testimonial 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Poco Mobile</h5>
-                    <p class="card-text">Testimonial from customer 3.</p>
-                  </div>
-                  <div class="mobileDetails">
-                    <h2>Poco</h2>
-                    <p>4GB RAM, 64GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
+        
+              <!-- Repeat similar blocks for more products as needed -->
+        
             </div>
-
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/iphone.webp" class="card-img-top" alt="Testimonial 4">
-                  <div class="card-body">
-                    <h5 class="card-title">Iphone</h5>
-                    <p class="card-text">Testimonial from customer 4.</p>
-                  </div>
-                  <div class="mobileDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/samsung.jpg" class="card-img-top" alt="Testimonial 5">
-                  <div class="card-body">
-                    <h5 class="card-title">Samsung</h5>
-                    <p class="card-text">Testimonial from customer 5.</p>
-                  </div>
-                  <div class="mobileDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/honor.jpg" class="card-img-top" alt="Testimonial 6">
-                  <div class="card-body">
-                    <h5 class="card-title">Honor</h5>
-                    <p class="card-text">Testimonial from customer 6.</p>
-                  </div>
-                  <div class="mobileDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobileControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next text-black" type="button" data-bs-target="#carouselMobileControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+        
+        
       </div>
 
       <div class="smartWatchProducts px-2 my-4">
         <h2 class="pt-3">Smart Watches</h2>
-        <div id="carouselSmartWatchControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch.jpg" class="card-img-top" alt="Testimonial 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 1</h5>
-                    <p class="card-text">Testimonial from customer 1.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="images/laptop1.jpg" class="card-img-top" alt="Testimonial 1">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung Mobile</h5>
+                  <p class="card-text">Testimonial from customer 1.</p>
                 </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch1.webp" class="card-img-top" alt="Testimonial 2">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 2</h5>
-                    <p class="card-text">Testimonial from customer 2.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch2.jpg" class="card-img-top" alt="Testimonial 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 3</h5>
-                    <p class="card-text">Testimonial from customer 3.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
+                <div class="laptopDetails">
+                  <h2>Honor</h2>
+                  <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
+                  <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                 </div>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch3.jpg" class="card-img-top" alt="Testimonial 4">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 4</h5>
-                    <p class="card-text">Testimonial from customer 4.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch5.jpg" class="card-img-top" alt="Testimonial 5">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 5</h5>
-                    <p class="card-text">Testimonial from customer 5.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="images/smartwatch6.jpg" class="card-img-top" alt="Testimonial 6">
-                  <div class="card-body">
-                    <h5 class="card-title">Smart Watch 6</h5>
-                    <p class="card-text">Testimonial from customer 6.</p>
-                  </div>
-                  <div class="watchDetails">
-                    <h2>Honor</h2>
-                    <p>8GB RAM, 512GB Storage, 50MP rear Camera, 16MP Front Camera, 5000mAh Battery</p>
-                    <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmartWatchControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselSmartWatchControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
 
@@ -686,5 +534,6 @@
 
 <script src="js/script.js"></script>
 
-
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
