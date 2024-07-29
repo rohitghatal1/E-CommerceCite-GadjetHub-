@@ -214,51 +214,24 @@ body::-webkit-scrollbar-thumb {
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #c4dfe6; */
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .carousel-item {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: brightness(0.5);
-  }
-  @media (min-width: 768px) {
-    .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev, .carousel-inner .carousel-item.active {
-      display: flex !important;
-    }
-    .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-    .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start { 
-      transform: translateX(0);
-    }
-  }
-
-  .card {
+}
+.card {
     margin: auto;
     position: relative;
     overflow: hidden;

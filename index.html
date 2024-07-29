@@ -620,13 +620,31 @@
 
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 3, // Default number of slides per view
+    spaceBetween: 30, // Default space between slides
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      // When window width is >= 320px
+      320: {
+        slidesPerView: 1, // Show 1 slide on smaller screens
+        spaceBetween: 10 // Space between slides on smaller screens
+      },
+      // When window width is >= 640px
+      640: {
+        slidesPerView: 2, // Show 2 slides on medium screens
+        spaceBetween: 20 // Space between slides on medium screens
+      },
+      // When window width is >= 1024px
+      1024: {
+        slidesPerView: 3, // Show 3 slides on larger screens
+        spaceBetween: 30 // Space between slides on larger screens
+      }
+    }
   });
 </script>
+
 
 </html>
