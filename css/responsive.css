@@ -136,6 +136,13 @@
         display: none;
     }
 
+    .feedbackbtnMobile{
+        display: block;
+        font-size: 15px;
+        background-color: #0A1828;
+        border: 1px solid #BFA181;
+        padding: 0.2rem;
+    }
     footer{
         font-size: small;
     }
