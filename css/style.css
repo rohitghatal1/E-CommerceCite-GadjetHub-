@@ -7,7 +7,7 @@ html{
 }
 
 body{
-   background-color: #0A1828;
+   background-color: #c4dfe6 !important;
 }
 body h1,h2,h3,h4,h5,h6{
     font-family: 'Merienda', cursive;
@@ -322,6 +322,7 @@ body::-webkit-scrollbar-thumb {
     right: 5rem;
     bottom: 3rem;
     text-align: center;
+    z-index: 20;
 }
 
 .goTotopBtn a{
