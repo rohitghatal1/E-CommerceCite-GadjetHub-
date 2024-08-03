@@ -503,11 +503,11 @@
     <div class="contactUsContainer container d-flex justify-content-between gap-1">
       <div class="sendMessageSection p-3">
         <h2 class="text-center">Send Message</h2>
-        <form action="https://formspree.io/f/mvoedkbr" method="post" class="w-75 m-auto">
-          <input class="sendMessageInputs" type="text" placeholder="Your Name">
-          <input class="sendMessageInputs" type="email" placeholder="Your Email">
-          <input class="sendMessageInputs" type="text" placeholder="Subject">
-          <textarea class="sendMessageInputs" rows="6" placeholder="Message"></textarea>
+        <form action="https://formspree.io/f/mvoedkbr" method="post" class="w-100 m-auto">
+          <input class="sendMessageInputs" name="uName" type="text" placeholder="Your Name">
+          <input class="sendMessageInputs" name="uEmail" type="email" placeholder="Your Email">
+          <input class="sendMessageInputs" name="subject" type="text" placeholder="Subject">
+          <textarea class="sendMessageInputs" name="message" rows="6" placeholder="Message"></textarea>
 
           <input type="submit" value="Send" class="btn" style="background-color: #0a1828; color: #fff; border: 1px solid #fff;">
         </form>
