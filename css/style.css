@@ -113,7 +113,7 @@ body::-webkit-scrollbar-thumb {
 .hamburgerMenu {
     width: 25px;
     height: 25px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
