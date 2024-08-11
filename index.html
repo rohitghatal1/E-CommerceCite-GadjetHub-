@@ -127,15 +127,15 @@
     <nav class="navbar pt-4" id="top">
       <div class="container d-flex align-items-center" id="navItemContainer">
         <div class="logo col-auto"><img src="logos/gadgetHub3.png"></div>
-        <div class="navitems">
-          <span class="closeMobileNavbar">&times;</span>
+        <div class="navitems" id="navItems">
+          <span class="closeMobileNavbar" onclick="closeMobileNav()">&times;</span>
           <span class="cursor"><a href="index.html">Home</a></span>
           <span><a href="#services">Services</a></span>
           <span><a href="#productsSection">Products</a></span>
           <span><a href="#aboutSection">About Us</a></span>
           <span><a href="#contactSection">Contact Us</a></span>
         </div>
-        <div class="hamburgerMenu">
+        <div class="hamburgerMenu" onclick="openMobileNavbar()">
             <span></span>
             <span></span>
             <span></span>
@@ -653,6 +653,15 @@
     }
   });
 </script>
+<script>
 
+  function openMobileNavbar(){
+    document.getElementById("navItems").style.display = "flex";
+  }
+
+  function closeMobileNav(){
+    document.getElementById("navItems").style.display = "none";
+  }
+</script>
 
 </html>
