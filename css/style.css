@@ -81,6 +81,9 @@ body::-webkit-scrollbar-thumb {
     color: #BFA181;
 }
 
+.closeMobileNavbar{
+    display: none;
+}
 .mobileNavbar{
     display:none !important;
 }
