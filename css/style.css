@@ -152,6 +152,9 @@ body::-webkit-scrollbar-thumb {
     right: -10px;
     width: 1rem;
     height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #E7EBE0FF;
     color: black;

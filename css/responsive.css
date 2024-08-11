@@ -7,8 +7,8 @@
     left: 15%;
     background-color: #0A1828;
     color: #BFA181;
-    width: 19rem;
-    padding: 0.4rem;
+    width: 20rem;
+    padding: 0.5rem;
     z-index: 20;
     border-radius: 0.4rem;
     }
@@ -28,7 +28,7 @@
 
     .loginBtn,
     .submitbtn{
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
         background-color: #0A1828;
         color: #BFA181;
         padding: 0.5rem;
@@ -48,8 +48,11 @@
         position: absolute;
         top: -4px;
         right: 2px;
-        width: 0.7rem;
-        height: 0.7rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         background-color: #E7EBE0FF;
         color: black;
@@ -95,7 +98,7 @@
         display: block;
         position: absolute;
         top: -5px;
-        right: 0.5rem;
+        right: 1rem;
         font-size: 1.3rem;
         color: #ccc;
     }
