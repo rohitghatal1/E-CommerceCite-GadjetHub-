@@ -662,6 +662,10 @@
   function closeMobileNav(){
     document.getElementById("navItems").style.display = "none";
   }
+
+  document.querySelectorAll("#navItems a").forEach(link=>{
+    link.addEventListener('click', closeMobileNav);
+  })
 </script>
 
 </html>
