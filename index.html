@@ -141,6 +141,91 @@
       </div>
     </nav>
   </header>
+  <!-- My Cart Modal -->
+  <div class="myCartModal rounded" id="myCart">
+    <div class="container p-2 d-flex justify-content-between align-items-center bg-dark text-light">
+        <h2 class="hFont text-center p-1">My Cart: John Doe</h2>
+        <span style="font-size:2rem; cursor:pointer;" onclick="closeMyCart()">&times;</span>
+    </div>
+    <h4 class="textFont p-1 container">Items Added to Cart</h4>
+    <div class="itemsTable container" style="max-height: 80vh; overflow-y: auto;">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Items</th>
+                    <th>Model</th>
+                    <th>Photo</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dummy Data Start -->
+                <tr>
+                    <td>1</td>
+                    <td>Brand A</td>
+                    <td>Model X</td>
+                    <td><img src="path/to/photo1.jpg" alt="" style="width:80%; height:8rem;"></td>
+                    <td>$199.99</td>
+                    <td>
+                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                            <i class="fas fa-trash"></i> Remove
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Brand B</td>
+                    <td>Model Y</td>
+                    <td><img src="path/to/photo2.jpg" alt="" style="width:80%; height:8rem;"></td>
+                    <td>$249.99</td>
+                    <td>
+                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                            <i class="fas fa-trash"></i> Remove
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Brand C</td>
+                    <td>Model Z</td>
+                    <td><img src="path/to/photo3.jpg" alt="" style="width:80%; height:8rem;"></td>
+                    <td>$299.99</td>
+                    <td>
+                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                            <i class="fas fa-trash"></i> Remove
+                        </a>
+                    </td>
+                </tr>
+                <!-- Display the total price -->
+                <tr>
+                    <td colspan="4" style="text-align: right; font-weight: bold;">Total:</td>
+                    <td>$749.97</td>
+                    <td></td>
+                </tr>
+                <!-- Empty Cart Button -->
+                <tr>
+                    <td colspan="6">
+                        <button class="btn p-1 bg-warning text-dark">
+                            <i class="fa fa-exclamation-circle"></i> Cart is Empty
+                        </button>
+                    </td>
+                </tr>
+                <!-- Place Order Button (Visible when items are in the cart) -->
+                <tr>
+                    <td colspan="6">
+                        <button class="btn" style="background-color: #28a745; color: #ffffff;" onclick="openPlaceOrder()">
+                            <i class="fas fa-shopping-bag"></i> Place Order
+                        </button>
+                    </td>
+                </tr>
+                <!-- Dummy Data End -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
 
   <!-- -----------------------------------------------Navbar section end -------------------------------------------------------- -->
 
