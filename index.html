@@ -112,7 +112,7 @@
             <i class="fa-solid fa-user"></i>
           </div>
           <div class="cartAndQuantity d-flex align-items-center">
-            <div class="cart">
+            <div class="cart" onclick="openMyCartModal()">
               <i class="fas fa-shopping-cart"></i>
             </div>
             <span class="quantity">5</span>
@@ -134,9 +134,9 @@
           <span><a href="#contactSection">Contact Us</a></span>
         </div>
         <div class="hamburgerMenu" onclick="openMobileNavbar()">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>
@@ -144,87 +144,87 @@
   <!-- My Cart Modal -->
   <div class="myCartModal rounded" id="myCart">
     <div class="container p-2 d-flex justify-content-between align-items-center bg-dark text-light">
-        <h2 class="hFont text-center p-1">My Cart: John Doe</h2>
-        <span style="font-size:2rem; cursor:pointer;" onclick="closeMyCart()">&times;</span>
+      <h2 class="hFont text-center p-1">My Cart: John Doe</h2>
+      <span style="font-size:2rem; cursor:pointer;" onclick="closeMyCart()">&times;</span>
     </div>
     <h4 class="textFont p-1 container">Items Added to Cart</h4>
     <div class="itemsTable container" style="max-height: 80vh; overflow-y: auto;">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>SN</th>
-                    <th>Items</th>
-                    <th>Model</th>
-                    <th>Photo</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Dummy Data Start -->
-                <tr>
-                    <td>1</td>
-                    <td>Brand A</td>
-                    <td>Model X</td>
-                    <td><img src="images/laptop1.jpg" alt="" style="width:80%; height:8rem;"></td>
-                    <td>$199.99</td>
-                    <td>
-                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
-                            <i class="fas fa-trash"></i> Remove
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Brand B</td>
-                    <td>Model Y</td>
-                    <td><img src="images/Apple_watch-series7.jpg" alt="" style="width:80%; height:8rem;"></td>
-                    <td>$249.99</td>
-                    <td>
-                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
-                            <i class="fas fa-trash"></i> Remove
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Brand C</td>
-                    <td>Model Z</td>
-                    <td><img src="images/honor.jpg" alt="" style="width:80%; height:8rem;"></td>
-                    <td>$299.99</td>
-                    <td>
-                        <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
-                            <i class="fas fa-trash"></i> Remove
-                        </a>
-                    </td>
-                </tr>
-                <!-- Display the total price -->
-                <tr>
-                    <td colspan="4" style="text-align: right; font-weight: bold;">Total:</td>
-                    <td>$749.97</td>
-                    <td></td>
-                </tr>
-                <!-- Empty Cart Button -->
-                <!-- <tr>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>SN</th>
+            <th>Items</th>
+            <th>Model</th>
+            <th>Photo</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dummy Data Start -->
+          <tr>
+            <td>1</td>
+            <td>Samsung</td>
+            <td>Galaxy Watch 4</td>
+            <td><img src="images/Gear-Samsung-Galaxy-Watch4.webp" alt="" style="width:100%; height:10rem;"></td>
+            <td>Rs35,000</td>
+            <td>
+              <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                <i class="fas fa-trash"></i> Remove
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Apple</td>
+            <td>Iphone14</td>
+            <td><img src="images/iphone14.jpg" alt="" style="width:100%; height:10rem;"></td>
+            <td>Rs150,000</td>
+            <td>
+              <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                <i class="fas fa-trash"></i> Remove
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lenovo</td>
+            <td>ThinkPad X1 Carbon</td>
+            <td><img src="images/lenovothinkpad.jpg" alt="" style="width:100%; height:10rem; object-fit: cover;"></td>
+            <td>Rs160,000</td>
+            <td>
+              <a href="#" class="text-decoration-none p-1 bg-danger text-light fw-bold rounded">
+                <i class="fas fa-trash"></i> Remove
+              </a>
+            </td>
+          </tr>
+          <!-- Display the total price -->
+          <tr>
+            <td colspan="4" style="text-align: right; font-weight: bold;">Total:</td>
+            <td>Rs345,000</td>
+            <td></td>
+          </tr>
+          <!-- Empty Cart Button -->
+          <!-- <tr>
                     <td colspan="6">
                         <button class="btn p-1 bg-warning text-dark">
                             <i class="fa fa-exclamation-circle"></i> Cart is Empty
                         </button>
                     </td>
                 </tr> -->
-                <!-- Place Order Button (Visible when items are in the cart) -->
-                <tr>
-                    <td colspan="6">
-                        <button class="btn" style="background-color: #28a745; color: #ffffff;" onclick="openPlaceOrder()">
-                            <i class="fas fa-shopping-bag"></i> Place Order
-                        </button>
-                    </td>
-                </tr>
-                <!-- Dummy Data End -->
-            </tbody>
-        </table>
+          <!-- Place Order Button (Visible when items are in the cart) -->
+          <tr>
+            <td colspan="6">
+              <button class="btn" style="background-color: #28a745; color: #ffffff;" onclick="openPlaceOrder()">
+                <i class="fas fa-shopping-bag"></i> Place Order
+              </button>
+            </td>
+          </tr>
+          <!-- Dummy Data End -->
+        </tbody>
+      </table>
     </div>
-</div>
+  </div>
 
 
   <!-- -----------------------------------------------Navbar section end -------------------------------------------------------- -->
@@ -292,7 +292,7 @@
         <div class="container">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-5">
-              
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/samsung.jpg" class="card-img-top" alt="Samsung Galaxy S24">
@@ -307,7 +307,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/iphone14.jpg" class="card-img-top" alt="iPhone 14 Pro">
@@ -322,7 +322,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/Google-Pixel-7.jpg" class="card-img-top" alt="Google Pixel 7">
@@ -337,7 +337,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/oneplus11.webp" class="card-img-top" alt="OnePlus 11">
@@ -352,7 +352,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/huwaeip50.webp" class="card-img-top" alt="Huawei P50 Pro">
@@ -367,12 +367,12 @@
                   </div>
                 </div>
               </div>
-        
+
             </div>
             <div class="swiper-pagination mt-3"></div>
           </div>
         </div>
-        
+
       </div>
 
       <div class="smartWatchProducts px-2 my-4">
@@ -380,7 +380,7 @@
         <div class="container">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-5">
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/Apple_watch-series7.jpg" class="card-img-top" alt="Apple Watch Series 7">
@@ -395,7 +395,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/Gear-Samsung-Galaxy-Watch4.webp" class="card-img-top" alt="Samsung Galaxy Watch 4">
@@ -410,7 +410,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/fitbit-sense.webp" class="card-img-top" alt="Fitbit Sense">
@@ -425,7 +425,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/garminFenix6.jpg" class="card-img-top" alt="Garmin Fenix 6">
@@ -440,7 +440,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/Huawei-Watch-GT-3.webp" class="card-img-top" alt="Huawei Watch GT 3">
@@ -455,12 +455,12 @@
                   </div>
                 </div>
               </div>
-        
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        
+
       </div>
 
       <div class="laptopProducts px-2 my-4">
@@ -468,7 +468,7 @@
         <div class="container">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-5">
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/laptop1.jpg" class="card-img-top" alt="Dell XPS 13">
@@ -483,7 +483,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/laptop2.jpg" class="card-img-top" alt="MacBook Pro 14">
@@ -498,7 +498,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/laptop3.jpg" class="card-img-top" alt="HP Spectre x360">
@@ -513,7 +513,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/laptop4.jpg" class="card-img-top" alt="Asus ZenBook 14">
@@ -528,7 +528,7 @@
                   </div>
                 </div>
               </div>
-        
+
               <div class="swiper-slide">
                 <div class="card">
                   <img src="images/lenovothinkpad.jpg" class="card-img-top" alt="Lenovo ThinkPad X1 Carbon">
@@ -543,12 +543,12 @@
                   </div>
                 </div>
               </div>
-        
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -598,7 +598,8 @@
           <input class="sendMessageInputs" name="subject" type="text" placeholder="Subject">
           <textarea class="sendMessageInputs" name="message" rows="6" placeholder="Message"></textarea>
 
-          <input type="submit" value="Send" class="btn" style="background-color: #0a1828; color: #fff; border: 1px solid #fff;">
+          <input type="submit" value="Send" class="btn"
+            style="background-color: #0a1828; color: #fff; border: 1px solid #fff;">
         </form>
       </div>
       <div class="getInTouchSection p-3">
@@ -672,7 +673,8 @@
         <span><a href="#aboutSection">About Us</a></span>
         <span><a href="#contactSection">Contact Us</a></span>
 
-        <span class="feedbackbtnMobile text-center text-font mt-5 rounded" onclick="openFeedbackForm()">Feedback <i class="fa-solid fa-pen"></i></span>
+        <span class="feedbackbtnMobile text-center text-font mt-5 rounded" onclick="openFeedbackForm()">Feedback <i
+            class="fa-solid fa-pen"></i></span>
       </div>
 
       <div class="socialAndRatings">
@@ -739,15 +741,15 @@
 </script>
 <script>
 
-  function openMobileNavbar(){
+  function openMobileNavbar() {
     document.getElementById("navItems").style.display = "flex";
   }
 
-  function closeMobileNav(){
+  function closeMobileNav() {
     document.getElementById("navItems").style.display = "none";
   }
 
-  document.querySelectorAll("#navItems a").forEach(link=>{
+  document.querySelectorAll("#navItems a").forEach(link => {
     link.addEventListener('click', closeMobileNav);
   })
 </script>

@@ -1,6 +1,7 @@
 
 let loginModal = document.getElementById("loginModal");
 let signupModal = document.getElementById("signupModal");
+let myCartModal = document.getElementById("myCart");
 // for opening login modal 
 function openLoginModal(){
     loginModal.style.display = 'block';
@@ -121,3 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ratingText.textContent = `You rated us ${rating} out of 5`;
   }
   
+  function openMyCartModal(){
+    myCartModal.style.display = "block";
+  }
+  function closeMyCart(){
+    myCartModal.style.display = "none";
+  }
