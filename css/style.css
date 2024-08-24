@@ -59,6 +59,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     border: 1px solid #BFA181
 }
+
+.error-message{
+    margin-top: 0.5rem;
+    color: red;
+}
 .address{
     position: fixed;
     top: 0;
