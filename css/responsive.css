@@ -58,6 +58,26 @@
         color: black;
         border-radius: 50%;
     }
+
+    .myCartModal{
+        display:block;
+        position:fixed; 
+        top: 0; 
+        right:0; 
+        width:100%; 
+        z-index:11; 
+        background-color: #c4dfe6;
+    }
+    
+    .myCartModal table th, td{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .myCartModal table td img{
+        height: 5rem;
+    }
+    
     .navbar{
         position: relative;
         top: 2.3rem;
