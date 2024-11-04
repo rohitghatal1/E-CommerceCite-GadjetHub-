@@ -339,13 +339,6 @@ body::-webkit-scrollbar-thumb {
     padding: 0.4rem;
 }
 
-.card:hover .mobileDetails,
-.card:hover .laptopDetails,
-.card:hover .watchDetails {
-    top: calc(100% - 1rem); /* Adjust top position to just above the card */
-    opacity: 1;
-    transform: translateY(calc(-100% + 1rem)); /* Slide up into view */
-}
 
 .addToCartBtn{
     background-color: #0A1828;

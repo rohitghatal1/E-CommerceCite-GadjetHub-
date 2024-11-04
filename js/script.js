@@ -3,24 +3,24 @@ let loginModal = document.getElementById("loginModal");
 let signupModal = document.getElementById("signupModal");
 let myCartModal = document.getElementById("myCart");
 // for opening login modal 
-function openLoginModal(){
+function openLoginModal() {
     loginModal.style.display = 'block';
     signupModal.style.display = 'none';
 }
 
 // for closing login modal
-function closeLoginModal(){
+function closeLoginModal() {
     loginModal.style.display = 'none';
 }
 
 // to open signup modal 
-function openSignupModal(){
+function openSignupModal() {
     signupModal.style.display = 'block';
     loginModal.style.display = 'none';
 }
 
 // to  close signup modal 
-function closeSignupModal(){
+function closeSignupModal() {
     signupModal.style.display = 'none';
 }
 const products = document.getElementById("products");
@@ -31,24 +31,24 @@ let typingDelay = 150;
 let erasingDelay = 100;
 let newTextDelay = 2000;
 
-function type(){
-    if (charIndex < allProducts[arrayIndex].length){
+function type() {
+    if (charIndex < allProducts[arrayIndex].length) {
         products.textContent += allProducts[arrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
     }
-    else{
+    else {
         setTimeout(erase, newTextDelay);
     }
 }
 
-function erase(){
-    if(charIndex > 0){
+function erase() {
+    if (charIndex > 0) {
         products.textContent = allProducts[arrayIndex].substring(0, charIndex - 1);
         charIndex--;
         setTimeout(erase, erasingDelay);
     }
-    else{
+    else {
         arrayIndex = (arrayIndex + 1) % allProducts.length;
         setTimeout(type, typingDelay)
     }
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // to diplay the go to top button if user scrolls downward 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var hiddenDiv = document.getElementById('goToTop');
     var topSection = document.getElementById('top');
 
@@ -86,13 +86,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', handleScroll);
 });
 
+function showMoreDetails(detailId) {
+    const detailElement = document.getElementById(detailId);
+    detailElement.classList.add("show");
+}
+
+function hideDetails(detailId) {
+    const detailElement = document.getElementById(detailId);
+    detailElement.classList.remove("show");
+}
+
 // to open feedbback form 
 let feedbackForm = document.getElementById("feedbackForm");
-function openFeedbackForm(){
+function openFeedbackForm() {
     feedbackForm.style.display = "block";
     feedbackForm.style.width = "22rem";
 }
-function closeFeedbackForm(){
+function closeFeedbackForm() {
     feedbackForm.style.display = "none";
 }
 
@@ -100,31 +110,31 @@ function closeFeedbackForm(){
 document.addEventListener('DOMContentLoaded', () => {
     const stars = document.querySelectorAll('.star');
     stars.forEach(star => {
-      star.addEventListener('click', () => {
-        const rating = star.getAttribute('data-value');
-        setRating(rating);
-      });
+        star.addEventListener('click', () => {
+            const rating = star.getAttribute('data-value');
+            setRating(rating);
+        });
     });
-  });
-  
-  function setRating(rating) {
+});
+
+function setRating(rating) {
     const stars = document.querySelectorAll('.star');
     stars.forEach(star => {
-      if (parseInt(star.getAttribute('data-value')) <= rating) {
-        star.classList.add('selected');
-      } else {
-        star.classList.remove('selected');
-      }
+        if (parseInt(star.getAttribute('data-value')) <= rating) {
+            star.classList.add('selected');
+        } else {
+            star.classList.remove('selected');
+        }
     });
-  
+
     // Display the rating value (you can customize this part)
     const ratingText = document.querySelector('.rating-text');
     ratingText.textContent = `You rated us ${rating} out of 5`;
-  }
-  
-  function openMyCartModal(){
+}
+
+function openMyCartModal() {
     myCartModal.style.display = "block";
-  }
-  function closeMyCart(){
+}
+function closeMyCart() {
     myCartModal.style.display = "none";
-  }
+}
