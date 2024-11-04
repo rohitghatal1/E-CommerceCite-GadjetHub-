@@ -311,6 +311,20 @@ body::-webkit-scrollbar-thumb {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+.showMoreDetails{
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+    background-color: #C4DFE6;
+    color: #003B46;
+    border: 1px solid #003B46;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+}
+
 .card:hover .mobileDetails,
 .card:hover .laptopDetails,
 .card:hover .watchDetails {
