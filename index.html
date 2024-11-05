@@ -299,12 +299,12 @@
                   <div class="card-body">
                     <h5 class="card-title">Samsung Galaxy S24</h5>
                     <p class="card-text"><strong>Price:</strong> Rs120,000</p>
-                    <button class="showMoreDetails" title="Show Details" onclick="showMoreDetails()">
+                    <button class="showMoreDetails" title="Show Details" onclick="showMoreDetails('mobile1')">
                       <i class="fa-solid fa-angle-up"></i>
                     </button>
                   </div>
-                  <div class="laptopDetails">
-                    <button class="hideDetails" title="Hide Details" onclick="hideDetails()"><i class="fa-solid fa-angle-down"></i></button>
+                  <div class="laptopDetails" id="mobile1">
+                    <button class="hideDetails" title="Hide Details" onclick="hideDetails('mobile1')"><i class="fa-solid fa-angle-down"></i></button>
                     <h2>Samsung</h2>
                     <p>16GB RAM, 1TB Storage, 50MP Rear Camera, 16MP Front Camera, 5000mAh Battery</p>
                     <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
@@ -318,8 +318,12 @@
                   <div class="card-body">
                     <h5 class="card-title">iPhone 14 Pro</h5>
                     <p class="card-text"><strong>Price:</strong> Rs150,000</p>
+                    <button class="showMoreDetails" title="Show Details" onclick="showMoreDetails('mobile2')">
+                      <i class="fa-solid fa-angle-up"></i>
+                    </button>
                   </div>
-                  <div class="laptopDetails">
+                  <div class="laptopDetails" id="mobile2">
+                    <button class="hideDetails" title="Hide Details" onclick="hideDetails('mobile2')"><i class="fa-solid fa-angle-down"></i></button>
                     <h2>Apple</h2>
                     <p>6GB RAM, 512GB Storage, 48MP Rear Camera, 12MP Front Camera, 3095mAh Battery</p>
                     <button class="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
